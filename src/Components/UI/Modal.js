@@ -6,8 +6,6 @@
 //     return <div className={styles.backdrop} />
 // };
 
-
-
 // const ModalOverlay = (props) => {
 //     return(
 //         <div className={styles.modal}>
@@ -16,14 +14,13 @@
 //     );
 // };
 
-
 // const portalElement = document.getElementById("overlays");
 
 // const Modal = (props) => {
 //     return(
 //         <Fragment>
 //         {ReactDOM.createPortal(<Backdrop />, portalElement)};
-//         {ReactDOM.createPortal(<ModalOverlay>{props.children}</ModalOverlay>, 
+//         {ReactDOM.createPortal(<ModalOverlay>{props.children}</ModalOverlay>,
 //             portalElement)}
 //         </Fragment>
 //     );
@@ -31,10 +28,10 @@
 
 // export default Modal;
 
-import { Fragment } from 'react';
-import ReactDOM from 'react-dom';
+import { Fragment } from "react";
+import ReactDOM from "react-dom";
 
-import styles from './Modal.module.css';
+import styles from "./Modal.module.css";
 
 const Backdrop = (props) => {
   return <div className={styles.backdrop} />;
@@ -48,7 +45,7 @@ const ModalOverlay = (props) => {
   );
 };
 
-const portalElement = document.getElementById('overlays');
+const portalElement = document.getElementById("overlays");
 
 const Modal = (props) => {
   return (
